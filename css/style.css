@@ -1,0 +1,730 @@
+/* Police personnalisée Raleway https://fonts.google.com/specimen/Raleway#standard-styles */
+@font-face {
+    font-family: 'raleway';
+    src: url(Raleway-Italic-VariableFont_wght.ttf);
+    src: url(Raleway-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-stretch: 25% 150%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.wrapper{
+    margin: 0 3%;
+    overflow: auto;
+}
+body{
+    font-family: "raleway", sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+h1, h2{
+    font-size: 29px;
+}
+a{
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+}
+p{
+    font-size: 21px;
+}
+input{
+    border: none;
+    border-width:0px;
+}
+
+/*                                               Ecran standard */
+    /* Header */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 50px 40px 0 20px;    
+}
+#booki3x{
+    height: 60px;
+    margin: 50px 0 0 0;
+}
+#booki{
+    display: none;
+}
+nav li:hover{
+    border-top: #0065FC solid;
+}
+li a:hover{
+    color: #0065FC;
+}
+
+/* Form */
+section.form{
+    margin-top: 40px;
+}
+#submitmobile{
+    display: none;
+}
+span.mainform{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+#ilogo{
+    padding: 22px 26px 21px 25px;
+    font-size: 25px;
+    background: #f2f2f2;
+    border-radius: 22px 0 0 22px;
+}
+#recherche{
+    flex-grow: 1;
+    max-width: 320px;
+    padding: 19px;
+    font-size: 24px;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: bold;
+}
+.submit{
+    cursor: pointer;
+    background: #0065fc;
+    border-radius: 0 22px 22px 0;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 19px;      
+}
+.submit i {
+    display: none;
+}
+.filterform{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-around;
+    gap: 4% 0.56%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.filter input{
+    display: none;
+}
+.filter{
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+    border-radius: 34px 40px 40px 34px;
+    padding: 18px 18px 18px 73px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Fond du logo */
+.filter i{
+    color: #0065fc;
+    background-color: #deebff;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+
+}
+
+/* Centrer les logos */ 
+.filter i.fa-money-bill-wave:before{
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+.filter i.fa-child:before{
+    position: absolute;
+    top: 20px;
+    left: 23px;
+}
+.filter i.fa-heart:before{
+    position: absolute;
+    top: 20px;
+    left: 21px;
+}
+.filter i.fa-dog:before{
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+i.fa-info:before{
+    color: #0065fc;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    padding: 8px 13px;
+    margin-right: 20px;
+}
+.filter:hover{
+    background-color: #DEEBFF;
+    color: #0065fc;
+    border: 2px solid #DEEBFF;
+}
+.forminfo{
+    display: flex;
+}
+
+/* carte Hébergement */
+.hebergementpop{
+    display: flex;
+    margin-top: 50px;
+}
+.hebergement{
+    background-color: #f2f2f2;
+    border-radius: 26px;
+    padding: 3% 2% 3% 2%;
+    margin-right: 2%;
+    flex: 1 1 66%;
+}
+.carte_hebergement{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.carte_lien{
+    display: inline-block;
+    background-color: #fff;
+    margin: 1%;
+    padding: 7px;
+    flex: 1 1 30%;
+    border-radius: 26px;
+    box-shadow: 0 10px 20px rgba(171, 171, 171, 0.3), 0 6px 6px rgba(190, 190, 190, 0.3);
+}
+.carte_conteneur_img{
+    height: 152px;
+    width: 100%;
+    border-radius: 26px 26px 0 0;
+    object-fit: cover;
+    min-width: 200px;
+}
+.carte_conteneur_info{
+    padding: 1% 5%;
+}
+.carte_conteneur_rang{
+    margin-top: 3%;
+    font-size: 18px;
+    color: #0065fc;
+}
+.-etoilegrise{
+    color: rgb(217, 217, 217);
+}
+.hebergementplus{
+    margin-top: 40px;
+    text-indent: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+/* carte Plus populaire */
+.populaire{
+    background-color: #F2F2F2;
+    border-radius: 26px;
+    padding: 3.5% 3% 3% 3%;
+    flex: 1 1 33%;
+}
+.populaire_titre{
+    display: flex;
+    justify-content: space-between;
+}
+.populaire_titre i{
+    font-size: 25px;
+    padding-top: 5px;
+}
+.carte_populaire{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.populaire_lien{
+    background-color: #fff;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 26px;
+    box-shadow: 0 10px 20px rgba(171, 171, 171, 0.3), 0 6px 6px rgba(190, 190, 190, 0.3);
+}
+.populaire_conteneur{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.populaire_conteneur_img{
+    width: 170px;
+    min-width: 170px;
+    height: 179px;
+    border-radius: 26px 0 0 26px;
+    object-fit: cover;
+}
+.populaire_conteneur_info{
+    padding: 5% 6% 2.5% 5%;
+    display: flex;
+    flex-direction: column;
+    min-width: 235px;
+}
+.populaire_conteneur_rang{
+    margin-top: auto;
+    font-size: 16px;
+    color: #0065fc;
+}
+
+/* carte Activites */
+.activites{
+    margin: 80px 0;
+}
+.carte_activites_conteneur{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 3%;
+}
+.carte_activites:nth-child(even){
+    justify-content: space-between;
+}
+.carte_activites{
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column; 
+}
+.activites_lien{
+    border-radius: 26px;
+    box-shadow: 0 10px 20px rgba(171, 171, 171, 0.3), 0 6px 6px rgba(190, 190, 190, 0.3);
+}
+.activites_conteneur_img{
+    border-radius: 26px 26px 0 0;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+.activites_conteneur_info h3{
+    padding: 7% 7% 7% 7%;
+    font-size: 18px;
+    font-weight: 800;
+}
+.-hfort{
+    height: 240px;
+}
+.-hfrioul{
+    height: 145px;
+}
+.-hgarde{
+    height: 180px;
+}
+.-hparc{
+    height: 205px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 30px;
+} 
+.footer_conteneur{
+    flex: 0 1 33%;
+    margin-left: 2%;
+}
+.footer_liste{
+    list-style: none
+}
+.footer_liste li{
+    padding-top: 12px;
+}
+.footer_liste h3{
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+/* Paramètres selon taille d'écran */
+/*Concernant les breakpoints, nous avons convenu avec le client
+d’utiliser 992 px et 768 px.
+992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+tout ce qui est en dessous de 768 pour les téléphones portables.*/
+
+/*                                                Tablette >768px ET <992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
+    .wrapper{
+        margin: 0;
+    }
+
+    /* Header */
+    .logo{
+        width: min-content;
+    }
+    #booki3x{
+        display: none;
+    }
+    #booki{
+        display: block;
+        height: 60px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    nav img{
+        display: block;
+    }
+    nav ul{
+        padding-inline-start: 0px;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 100%;
+    }
+    nav li{
+        flex: 50%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: #F2F2F2 solid;
+    }
+    nav li:hover{
+        color: #0065FC;
+        border-bottom: #0065FC solid;
+        border-top: none;
+        z-index: 1;
+    }
+
+    /* Form */
+    #submitdesktop{
+        display: none;
+    }
+    section.form{
+        margin: 0 3%;
+    }
+    span.mainform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ilogo{
+        padding: 16px 20px;
+        font-size: 20px;
+        background: #f2f2f2;
+        border-radius: 17px 0 0 17px;
+    }
+    #recherche{
+        min-width: 170px;
+        padding: 15px 10px 14px 10px;
+        font-size: 18px;
+        max-width: none;
+        border: none;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .submit{
+        background: #0065fc;
+        border-radius: 17px 17px 17px 17px;
+        padding: 0;
+    }
+    .submit i{
+        display: block;
+        font-size: 18px;
+        padding: 17px;
+    }
+    span.text{
+        display: none;
+    }
+    .filterform h1{
+        margin-right: 100%;
+    }
+
+    /* carte Plus populaire */
+    .populaire{
+        border-radius: 0;
+        padding: 7% 5% 7% 5%;
+    }
+    .carte_populaire{
+        margin-top: 15px;
+    }
+    .populaire_conteneur_img{
+        width: 170px;
+        min-width: 130px;
+        height: 134px;
+    }
+    .populaire_conteneur_info{
+        padding: 2.5% 7.5% 2% 7.5%;
+    }
+    .populaire_conteneur_rang{
+        font-size: 15px;
+    }
+    .populaire_lien{
+        flex: 1 1 100%;
+        margin: 1.5% 1%;
+    }
+
+    /* Hébergement et Carte */
+    .hebergementpop{
+        margin-top: 35px;
+        flex-direction: column-reverse;
+    }
+    .form{
+        background-color: white;
+    }
+
+    /* carte Activites */
+    .activites{
+        margin: 25px 0;
+        padding: 0 5%;
+    }
+    .carte_activites_conteneur{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        row-gap: 15px;
+    }
+    .carte_activites{
+        flex: 0 1 45%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .carte_activites:nth-child(1){
+        order: 2;
+    }
+    .carte_activites:nth-child(2){
+        order: 1;
+    }
+    .carte_activites:nth-child(3){
+        order: 3;
+    }
+    .carte_activites:nth-child(4){
+        order: 4;
+    }
+
+    /* Footer */
+    footer{
+        /*flex-direction: column;*/
+        padding: 45px;
+        gap: 30px;
+    } 
+    .footer_liste li{
+        padding-top: 15px;
+    }
+    .footer_liste h3{
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+}
+
+/*                                                  Téléphone portable <768px */
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    .wrapper{
+        margin: 0;
+    }
+    /* Header */
+    .logo{
+        width: min-content;
+    }
+    #booki3x{
+        display: none;
+    }
+    #booki{
+        display: block;
+        height: 50px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    nav img{
+        display: block;
+    }
+    nav ul{
+        padding-inline-start: 0px;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 100%;
+    }
+    nav li{
+        flex: 50%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: #F2F2F2 solid;
+    }
+    nav li:hover{
+        color: #0065FC;
+        border-bottom: #0065FC solid;
+        border-top: none;
+        z-index: 1;
+    }
+
+    /* Form */
+    #submitdesktop{
+        display: none;
+    }
+    section.form{
+        margin: 0 5%;
+    }
+    section.form h1{
+        font-size: 25px;
+    }
+    section.form p{
+        font-size: 16px;
+    }
+    span.mainform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ilogo{
+        padding: 16px 20px;
+        font-size: 20px;
+        background: #f2f2f2;
+        border-radius: 17px 0 0 17px;
+    }
+    #recherche{
+        min-width: 170px;
+        padding: 15px 10px 14px 10px;
+        font-size: 18px;
+        max-width: none;
+        border: none;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .submit{
+        background: #0065fc;
+        border-radius: 17px 17px 17px 17px;
+        padding: 0;
+    }
+    .submit i{
+        display: block;
+        font-size: 18px;
+        padding: 17px;
+    }
+    span.text{
+        display: none;
+    }
+    .filterform h1{
+        margin-right: 70%;
+    }
+
+    /* Hébergement et Carte */
+    .hebergementpop{
+        margin-top: 35px;
+        flex-direction: column-reverse;
+    }
+    .hebergementpop h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .hebergementpop p{
+        font-size: 14px;
+    }
+    .hebergement{
+        background-color: white;
+        margin-top: 7%;
+    }
+    .form{
+        background-color: white;
+    }
+    .carte_lien{
+        flex: 1 1 100%;
+        margin: 1.5% 1%;
+    }
+    .carte_conteneur_img{
+        height: 115px;
+    }
+    .carte_conteneur_rang{
+        font-size: 14px;
+    }
+
+    /* carte Plus populaire */
+    .populaire{
+        border-radius: 0;
+        padding: 7% 5% 7% 5%;
+    }
+    .carte_populaire{
+        margin-top: 15px;
+    }
+    .populaire_conteneur_img{
+        width: 170px;
+        min-width: 130px;
+        height: 134px;
+    }
+    .populaire_conteneur_info{
+        padding: 2.5% 7.5% 2% 7.5%;
+        min-width: 100px;
+    }
+    .populaire_conteneur_info h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .populaire_conteneur_info p{
+        font-size: 14px;
+    }
+    .populaire_conteneur_rang{
+        font-size: 15px;
+    }
+    .populaire_lien{
+        flex: 1 1 100%;
+        margin: 1.5% 1%;
+    }
+
+    /* carte Activites */
+    .activites{
+        margin: 50px 0;
+        padding: 0 5%;
+    }
+    .carte_activites_conteneur{
+        flex-flow: column nowrap;
+    }
+    .activites_lien{
+        margin-bottom: 7%;
+    }
+    .activites_conteneur_img{
+        height: 134px;
+    }
+    .activites_conteneur_info h3{
+        padding: 5% 4% 4% 5%;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+        padding: 45px;
+        gap: 30px;
+    } 
+    .footer_liste li{
+        padding-top: 15px;
+    }
+    .footer_liste h3{
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+}
